@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PersonesController">
+   <children>
+      <Text layoutX="38.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <TextField fx:id="personID" layoutX="166.0" layoutY="96.0" prefHeight="26.0" prefWidth="478.0" />
+      <Text layoutX="38.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%persona.nombre" />
+      <TextField fx:id="personName" layoutX="166.0" layoutY="126.0" prefHeight="26.0" prefWidth="478.0" />
+      <Text layoutX="38.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%persona.apellidos" />
+      <TextField fx:id="personLastname" layoutX="166.0" layoutY="155.0" prefHeight="26.0" prefWidth="478.0" />
+      <Text layoutX="38.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%persona.dni" />
+      <TextField fx:id="personDNI" layoutX="166.0" layoutY="184.0" prefHeight="26.0" prefWidth="478.0" />
+      <Text layoutX="36.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%persona.fecha" />
+      <DatePicker fx:id="personDate" layoutX="166.0" layoutY="242.0" />
+      <Text layoutX="36.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%persona.email" />
+      <TextArea fx:id="personPhones" layoutX="37.0" layoutY="305.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="38.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%persona.telefonos" />
+      <Button fx:id="customerSave" layoutX="346.0" layoutY="583.0" mnemonicParsing="false" text="%button.guardar" />
+      <Button fx:id="customerDelete" layoutX="459.0" layoutY="583.0" mnemonicParsing="false" text="%button.eliminar" />
+      <Button fx:id="customerExit" layoutX="574.0" layoutY="583.0" mnemonicParsing="false" onAction="#onActionSortir" text="%button.salir" />
+      <TextField fx:id="personEmail" layoutX="166.0" layoutY="213.0" prefHeight="26.0" prefWidth="478.0" />
+      <Text layoutX="33.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%title.proveedor">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
